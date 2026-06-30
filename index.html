@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart Clone</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f1f3f6;
+}
+
+/* Header */
+
+header{
+    background:#2874f0;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 40px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.search-box{
+    width:45%;
+}
+
+.search-box input{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:3px;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login-btn{
+    background:white;
+    color:#2874f0;
+    padding:8px 20px;
+    border:none;
+    border-radius:3px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Categories */
+
+.categories{
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    padding:15px;
+    margin-top:10px;
+}
+
+.category{
+    text-align:center;
+    cursor:pointer;
+}
+
+.category img{
+    width:60px;
+    height:60px;
+}
+
+.category p{
+    margin-top:8px;
+    font-weight:bold;
+}
+
+/* Banner */
+
+.banner{
+    margin:15px;
+}
+
+.banner img{
+    width:100%;
+    border-radius:5px;
+}
+
+/* Product Section */
+
+.section{
+    background:white;
+    margin:15px;
+    padding:20px;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    border:1px solid #ddd;
+    border-radius:5px;
+    text-align:center;
+    padding:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0px 0px 10px rgba(0,0,0,.2);
+}
+
+.card img{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+.price{
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.old-price{
+    color:gray;
+    text-decoration:line-through;
+}
+
+button{
+    margin-top:10px;
+    background:#fb641b;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:3px;
+}
+
+/* Footer */
+
+footer{
+    background:#172337;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+Flipkart
+</div>
+
+<div class="search-box">
+<input type="text" placeholder="Search for Products, Brands and More">
+</div>
+
+<div class="menu">
+<button class="login-btn">Login</button>
+<a href="#">Cart</a>
+<a href="#">Become Seller</a>
+</div>
+
+</header>
+
+<div class="categories">
+
+<div class="category">
+<img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png">
+<p>Mobiles</p>
+</div>
+
+<div class="category">
+<img src="https://cdn-icons-png.flaticon.com/512/3082/3082037.png">
+<p>Fashion</p>
+</div>
+
+<div class="category">
+<img src="https://cdn-icons-png.flaticon.com/512/3081/3081986.png">
+<p>Electronics</p>
+</div>
+
+<div class="category">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+<p>Home</p>
+</div>
+
+<div class="category">
+<img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png">
+<p>Appliances</p>
+</div>
+
+<div class="category">
+<img src="https://cdn-icons-png.flaticon.com/512/869/869636.png">
+<p>Travel</p>
+</div>
+
+</div>
+
+<div class="banner">
+
+<img src="https://picsum.photos/1400/350">
+
+</div>
+
+<div class="section">
+
+<h2>Best Deals</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://picsum.photos/200?1">
+<h3>Apple iPhone 16</h3>
+<div class="price">₹74,999</div>
+<div class="old-price">₹79,999</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/200?2">
+<h3>Samsung Galaxy S25</h3>
+<div class="price">₹59,999</div>
+<div class="old-price">₹64,999</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/200?3">
+<h3>HP Laptop</h3>
+<div class="price">₹49,999</div>
+<div class="old-price">₹55,999</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/200?4">
+<h3>Boat Headphones</h3>
+<div class="price">₹1,499</div>
+<div class="old-price">₹2,499</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/200?5">
+<h3>Smart Watch</h3>
+<div class="price">₹2,999</div>
+<div class="old-price">₹5,999</div>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Flipkart Clone</h3>
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
